@@ -1,0 +1,53 @@
+{
+	"color": "#fffb8700",
+	"description": "This is Mo",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1666323786.json",
+	"mirror_portraits": false,
+	"name": "Mo",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -100,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://MoSprite1.png"
+		},
+		{
+			"name": "closedEyes",
+			"path": "res://MoSprite2.png"
+		},
+		{
+			"name": "wideEyes",
+			"path": "res://MoSprite5.png"
+		},
+		{
+			"name": "determined",
+			"path": "res://MoSprite7.png"
+		},
+		{
+			"name": "squint",
+			"path": "res://MoSquint3.png"
+		},
+		{
+			"name": "sad(amongus)",
+			"path": "res://MoCry.png"
+		},
+		{
+			"name": "worried",
+			"path": "res://MoWorried.png"
+		},
+		{
+			"name": "pointing",
+			"path": "res://MoPoint.png"
+		},
+		{
+			"name": "looking",
+			"path": "res://MoLook.png"
+		}
+	],
+	"scale": 200,
+	"theme": ""
+}

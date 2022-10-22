@@ -1,0 +1,108 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://notepad.png" type="Texture" id=1]
+[ext_resource path="res://NotepadProgram.tscn" type="PackedScene" id=2]
+[ext_resource path="res://menu.gd" type="Script" id=3]
+[ext_resource path="res://SmallWindow.tscn" type="PackedScene" id=4]
+[ext_resource path="res://notepadPressed.png" type="Texture" id=5]
+[ext_resource path="res://fileIcon.png" type="Texture" id=6]
+[ext_resource path="res://paintIcon.png" type="Texture" id=7]
+[ext_resource path="res://explorerIcon.png" type="Texture" id=8]
+[ext_resource path="res://recycleBin.png" type="Texture" id=9]
+[ext_resource path="res://winScreen.tscn" type="PackedScene" id=10]
+[ext_resource path="res://paintIconPressed.png" type="Texture" id=11]
+[ext_resource path="res://ExplorerProgram.tscn" type="PackedScene" id=12]
+[ext_resource path="res://RecycleProgram.tscn" type="PackedScene" id=13]
+[ext_resource path="res://FileProgram.tscn" type="PackedScene" id=14]
+
+[node name="DesktopIcons" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 1920, 1080 )
+script = ExtResource( 3 )
+
+[node name="Notepad" type="TextureButton" parent="."]
+margin_left = 163.0
+margin_top = 114.0
+margin_right = 302.0
+margin_bottom = 253.0
+rect_min_size = Vector2( 20, 20 )
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 5 )
+expand = true
+
+[node name="Recycle Bin" type="TextureButton" parent="."]
+margin_left = 163.0
+margin_top = 368.0
+margin_right = 302.0
+margin_bottom = 507.0
+rect_min_size = Vector2( 20, 20 )
+texture_normal = ExtResource( 9 )
+expand = true
+
+[node name="Paint" type="TextureButton" parent="."]
+margin_left = 467.0
+margin_top = 119.0
+margin_right = 606.0
+margin_bottom = 258.0
+rect_min_size = Vector2( 20, 20 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 11 )
+expand = true
+
+[node name="Files" type="TextureButton" parent="."]
+margin_left = 464.0
+margin_top = 367.0
+margin_right = 603.0
+margin_bottom = 506.0
+rect_min_size = Vector2( 20, 20 )
+texture_normal = ExtResource( 6 )
+expand = true
+
+[node name="Explorer" type="TextureButton" parent="."]
+margin_left = 168.0
+margin_top = 621.0
+margin_right = 307.0
+margin_bottom = 760.0
+rect_min_size = Vector2( 20, 20 )
+texture_normal = ExtResource( 8 )
+expand = true
+
+[node name="CanvasLayerPaint" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="PaintProgram" parent="CanvasLayerPaint" instance=ExtResource( 4 )]
+visible = false
+margin_right = 0.0
+margin_bottom = 0.0
+
+[node name="CanvasLayerWin" type="CanvasLayer" parent="."]
+
+[node name="winScreen" parent="CanvasLayerWin" instance=ExtResource( 10 )]
+visible = false
+
+[node name="CanvasLayerNote" type="CanvasLayer" parent="."]
+
+[node name="NotepadProgram" parent="CanvasLayerNote" instance=ExtResource( 2 )]
+visible = false
+
+[node name="CanvasLayerExplorer" type="CanvasLayer" parent="."]
+
+[node name="ExplorerProgram" parent="CanvasLayerExplorer" instance=ExtResource( 12 )]
+visible = false
+
+[node name="CanvasLayerRecycle" type="CanvasLayer" parent="."]
+
+[node name="RecycleProgram" parent="CanvasLayerRecycle" instance=ExtResource( 13 )]
+visible = false
+
+[node name="CanvasLayerFile" type="CanvasLayer" parent="."]
+
+[node name="FileProgram" parent="CanvasLayerFile" instance=ExtResource( 14 )]
+visible = false
+
+[connection signal="pressed" from="Notepad" to="." method="_on_Notepad_pressed"]
+[connection signal="pressed" from="Recycle Bin" to="." method="_on_Recycle_Bin_pressed"]
+[connection signal="pressed" from="Paint" to="." method="_on_Paint_pressed"]
+[connection signal="pressed" from="Files" to="." method="_on_Files_pressed"]
+[connection signal="pressed" from="Explorer" to="." method="_on_Explorer_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Concrete scrape loop.mp3-55bd309cc22ff4ef2559b702070925ad.mp3str"
+
+[deps]
+
+source_file="res://Concrete scrape loop.mp3"
+dest_files=[ "res://.import/Concrete scrape loop.mp3-55bd309cc22ff4ef2559b702070925ad.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -46,7 +46,7 @@ func _on_Files_pressed():
 	if playerControl == true:
 		$CanvasLayerFile/FileProgram.visible = true
 	if smhoDialog == true:
-		add_child(new_dialog4)
+		add_child(new_dialog13)
 		
 func _on_Paint_pressed():
 	if playerControl == true:

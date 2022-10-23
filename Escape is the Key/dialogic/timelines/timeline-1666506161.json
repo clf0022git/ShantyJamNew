@@ -1,0 +1,52 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "[speed=20]WHAT!\n[speed=35]SUS??"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "closedEyes",
+			"text": "Yeah I'm just going to delete that."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_hide_canvas",
+				"target_node_path": "/root/Desktop/DesktopIcons/CanvasLayerPaint/PaintProgram"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666506161.json",
+		"name": "Paint Program"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1666330503.cfg"
+		},
+		{
+			"animation": "slide_in_left.gd",
+			"animation_length": 0.5,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SmhoWelp",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoWelp",
+			"text": "[speed=20][shake rate=100 level=15]WAaaaaiittTTT!![/shake] "
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoSurp",
+			"text": "[shake rate=100 level=15]HOW MANY ARE YOU BUYING?[/shake]"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666506104.json",
+		"name": "Buy Button Again"
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "SmhoWelp",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoWelp",
+			"text": "You're trying to click that again?"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoHoldLaugh",
+			"text": "You really want [speed=6][color=purple][shake rate=100 level=15]DOUBLE[/shake][/color] [shake rate=100 level=15][color=purple]corruption?[/color][/shake]"
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666512254.json",
+		"name": "Click Escape"
+	}
+}

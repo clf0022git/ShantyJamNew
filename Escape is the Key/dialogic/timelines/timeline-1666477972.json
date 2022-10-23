@@ -73,6 +73,30 @@
 			"text": "Good luck trying to [color=red]escape[/color] this one!"
 		},
 		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "closedEyes",
+			"text": "[speed = 8]. . ."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Oh, and [color=red]one more thing[/color]."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoTongue",
+			"text": "I think those darned programs are working now, so feel free to play with them while your stuck with [speed=8][wave amp=50 freq=2]M E[/wave]."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoAmused",
+			"text": "[speed=10][shake rate 100 level = 15]H A  H A  H A.[/shake]"
+		},
+		{
 			"call_node": {
 				"arguments": [
 

@@ -50,8 +50,12 @@
 		{
 			"name": "thinking",
 			"path": "res://MoThink.png"
+		},
+		{
+			"name": "tired",
+			"path": "res://MoTired.png"
 		}
 	],
 	"scale": 200,
-	"theme": ""
+	"theme": "default-theme.cfg"
 }

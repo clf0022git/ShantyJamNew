@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://FileProgram.gd" type="Script" id=1]
 [ext_resource path="res://FileExplorer.gd" type="Script" id=2]
@@ -10,17 +10,32 @@
 [ext_resource path="res://escapePic3.png" type="Texture" id=8]
 [ext_resource path="res://fileIcon.png" type="Texture" id=9]
 [ext_resource path="res://fileIcon2.png" type="Texture" id=10]
+[ext_resource path="res://Fonts/Born2bSportyV10.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://infoBox.png" type="Texture" id=12]
+[ext_resource path="res://infoBoxHover.png" type="Texture" id=13]
+[ext_resource path="res://infoTextBox.png" type="Texture" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 38
+extra_spacing_top = 2
+font_data = ExtResource( 11 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 29
+outline_size = 1
+font_data = ExtResource( 11 )
 
 [node name="FileProgram" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 609, 35 )
 script = ExtResource( 1 )
 
 [node name="FileExplorer" type="TextureRect" parent="."]
-margin_left = 386.0
-margin_top = 160.0
-margin_right = 1466.0
-margin_bottom = 880.0
+margin_left = 406.0
+margin_top = 75.0
+margin_right = 1486.0
+margin_bottom = 795.0
 texture = ExtResource( 7 )
 expand = true
 script = ExtResource( 2 )
@@ -53,6 +68,43 @@ texture_normal = ExtResource( 9 )
 texture_hover = ExtResource( 10 )
 expand = true
 
+[node name="Label2" type="Label" parent="FileExplorer"]
+margin_left = 59.0
+margin_top = 5.0
+margin_right = 245.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 1 )
+text = "File Explorer"
+
+[node name="displayInfo" type="TextureButton" parent="FileExplorer"]
+margin_left = 10.0
+margin_top = 5.0
+margin_right = 55.0
+margin_bottom = 50.0
+texture_normal = ExtResource( 12 )
+texture_hover = ExtResource( 13 )
+expand = true
+
+[node name="information" type="TextureRect" parent="FileExplorer"]
+visible = false
+margin_left = 30.0
+margin_top = 63.0
+margin_right = 230.0
+margin_bottom = 163.0
+texture = ExtResource( 14 )
+
+[node name="Label" type="Label" parent="FileExplorer/information"]
+margin_left = 6.0
+margin_top = 7.0
+margin_right = 193.0
+margin_bottom = 92.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "This is where you can surf the files!"
+autowrap = true
+
 [connection signal="gui_input" from="FileExplorer" to="FileExplorer" method="_on_FileExplorer_gui_input"]
 [connection signal="pressed" from="FileExplorer/exitWindow" to="." method="_on_exitWindow_pressed"]
 [connection signal="pressed" from="FileExplorer/escapeButton" to="." method="_on_escapeButton_pressed"]
+[connection signal="pressed" from="FileExplorer/doNotButton" to="." method="_on_doNotButton_pressed"]
+[connection signal="pressed" from="FileExplorer/displayInfo" to="." method="_on_displayInfo_pressed"]

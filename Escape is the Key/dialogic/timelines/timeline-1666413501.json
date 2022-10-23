@@ -162,7 +162,7 @@
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "determined",
-			"text": "And then with our  [wave amp=50 freq=2]COMBINED[/wave] forces, we can take it [b]down[/b]."
+			"text": "And then with our [wave amp=50 freq=2]COMBINED[/wave] forces, we can take it [b]down[/b]."
 		},
 		{
 			"choice": "No",

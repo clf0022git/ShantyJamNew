@@ -26,8 +26,28 @@
 		{
 			"name": "SmhoWelp",
 			"path": "res://SmhoWelp.png"
+		},
+		{
+			"name": "SmhoWink",
+			"path": "res://SmhoWink.png"
+		},
+		{
+			"name": "SmhoTongue",
+			"path": "res://SmhoTongue.png"
+		},
+		{
+			"name": "SmhoAmused",
+			"path": "res://SmhoAmused.png"
+		},
+		{
+			"name": "SmhocMon",
+			"path": "res://SmhocMon.png"
+		},
+		{
+			"name": "SmhoSurp",
+			"path": "res://SmhoSurp.png"
 		}
 	],
 	"scale": 200,
-	"theme": ""
+	"theme": "theme-1666330503.cfg"
 }

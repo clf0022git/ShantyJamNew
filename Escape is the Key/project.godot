@@ -81,12 +81,13 @@ _global_script_class_icons={
 [application]
 
 config/name="Escape Is The Key"
-run/main_scene="res://Main Screen.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Startup.tscn"
+config/icon="res://escapePic2.png"
 
 [autoload]
 
 Global="*res://Global.gd"
+SceneTransition="*res://scene_transition.tscn"
 
 [display]
 

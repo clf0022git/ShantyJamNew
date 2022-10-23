@@ -1,56 +1,67 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://winScreen.gd" type="Script" id=1]
+[ext_resource path="res://closeBoxHover.png" type="Texture" id=2]
+[ext_resource path="res://closeBox.png" type="Texture" id=3]
+[ext_resource path="res://closeBoxPressed.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/Born2bSportyV10.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://checkBox.png" type="Texture" id=6]
+[ext_resource path="res://checkBoxHover.png" type="Texture" id=7]
+[ext_resource path="res://checkBoxPress.png" type="Texture" id=8]
 
-[sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.862745, 0.0627451, 0.0627451, 1 )
-border_width_left = 6
-border_width_top = 6
-border_width_right = 6
-border_width_bottom = 6
-border_color = Color( 0, 0, 0, 1 )
+[sub_resource type="DynamicFont" id=1]
+size = 64
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 5 )
 
 [node name="winScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 840.0
-margin_bottom = -840.0
+margin_right = 1.0
+margin_bottom = 18.0
 rect_min_size = Vector2( 1920, 1080 )
 rect_scale = Vector2( 1.00091, 0.978431 )
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 268.755
-margin_top = 148.196
-margin_right = 1348.76
-margin_bottom = 868.196
-rect_min_size = Vector2( 1080, 720 )
+margin_left = 689.373
+margin_top = 329.098
+margin_right = 1326.37
+margin_bottom = 507.098
+rect_min_size = Vector2( 25, 75 )
 rect_scale = Vector2( 0.997889, 1.04476 )
 color = Color( 0.686275, 0.529412, 0.807843, 1 )
 
-[node name="Back" type="Button" parent="ColorRect"]
-margin_left = 1018.22
-margin_top = 22.4999
-margin_right = 1062.22
-margin_bottom = 62.4999
-rect_min_size = Vector2( 40, 40 )
-custom_styles/normal = SubResource( 1 )
-icon_align = 1
+[node name="Yes" type="TextureButton" parent="ColorRect"]
+margin_left = 355.796
+margin_top = 112.642
+margin_right = 401.796
+margin_bottom = 156.642
+size_flags_horizontal = 0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 7 )
+expand = true
 
-[node name="Label" type="Label" parent="ColorRect/Back"]
-margin_left = 2.0
-margin_top = 4.0
-margin_right = 42.0
-margin_bottom = 36.0
-text = "X"
-align = 1
-valign = 1
+[node name="No" type="TextureButton" parent="ColorRect"]
+margin_left = 198.607
+margin_top = 112.642
+margin_right = 244.607
+margin_bottom = 156.642
+size_flags_horizontal = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 2 )
+expand = true
 
 [node name="Label" type="Label" parent="ColorRect"]
-margin_left = 454.547
-margin_top = 312.064
-margin_right = 640.547
-margin_bottom = 330.064
-text = "Congratualation YOU WON!"
+margin_left = 143.541
+margin_top = 18.729
+margin_right = 491.541
+margin_bottom = 82.729
+custom_fonts/font = SubResource( 1 )
+text = "ARE YOU SURE?"
 
-[connection signal="pressed" from="ColorRect/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="ColorRect/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="ColorRect/No" to="." method="_on_No_pressed"]

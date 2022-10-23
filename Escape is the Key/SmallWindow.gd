@@ -15,4 +15,5 @@ func _on_info_pressed():
 		$actualWindow/information.visible = false
 		
 
-	
+func _hide_canvas():
+	$fakeWindow.visible = false

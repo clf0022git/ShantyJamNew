@@ -1,0 +1,84 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1666330503.cfg"
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 0.1,
+			"waiting_skippable": false
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Wow, I can't believe this website is still running!"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "SmhoHoldLaugh",
+			"question": "[speed=4]I mean who even LIKES the [wave amp=50 freq=2]escape[/wave] key?!"
+		},
+		{
+			"choice": "Me.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoHoldLaugh",
+			"text": "LOL, yeah makes sense"
+		},
+		{
+			"choice": "Yeah, I'm more of a tilde person myself.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "closedEyes",
+			"text": "[speed=100]..."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666506047.json",
+		"name": "Inside Website"
+	}
+}

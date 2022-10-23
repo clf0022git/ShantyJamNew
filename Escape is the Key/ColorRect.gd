@@ -1,6 +1,11 @@
 extends ColorRect
 
-
+var blackUsed = false
+var redUsed = false
+var blueUsed = false
+var whiteUsed = false
+var dialogOccured = true
+var new_dialog = Dialogic.start('If All Colors')
 
 var minside = false #mouse is not in window
 
@@ -45,6 +50,9 @@ func _process(delta):
 				points_drawn_white.append(get_local_mouse_position())
 				update()
 			 
+	if blackUsed == true and whiteUsed == true and redUsed == true and blueUsed == true and dialogOccured == true:
+		add_child(new_dialog)
+		dialogOccured = false
 		
 #picking colors
 #sets intial color/holds the colors
@@ -52,15 +60,19 @@ var paintBrush = Color.black
 
 func _on_blackPaint_pressed():
 	paintBrush = Color.black
+	blackUsed = true
 		
 func _on_bluePaint_pressed():
 	paintBrush = Color.blue
+	blueUsed = true
 	
 func _on_redPaint_pressed():
 	paintBrush = Color.red
+	redUsed = true
 	
 func _on_whitePaint_pressed():
 	paintBrush = Color.white
+	whiteUsed = true
 		
 func _draw():
 		for point in points_drawn_black:

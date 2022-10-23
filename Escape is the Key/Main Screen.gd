@@ -7,6 +7,8 @@ var new_dialog = Dialogic.start('Initial Greeting')
 var new_dialog2 = Dialogic.start('Mouse Moved')
 
 func _ready():
+	$MoOverworld.position = Vector2(2045,929)
+	yield(get_tree().create_timer(2), "timeout")
 	$AnimationPlayer.play("Mo")
 	yield(get_node("AnimationPlayer"), "animation_finished")
 	add_child(new_dialog)

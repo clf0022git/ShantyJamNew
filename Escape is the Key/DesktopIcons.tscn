@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://notepad.png" type="Texture" id=1]
+[ext_resource path="res://cheesyNotepad.png" type="Texture" id=1]
 [ext_resource path="res://NotepadProgram.tscn" type="PackedScene" id=2]
 [ext_resource path="res://menu.gd" type="Script" id=3]
 [ext_resource path="res://SmallWindow.tscn" type="PackedScene" id=4]
-[ext_resource path="res://notepadPressed.png" type="Texture" id=5]
+[ext_resource path="res://Fonts/coolvetica condensed rg.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://fileIcon.png" type="Texture" id=6]
 [ext_resource path="res://paintIcon.png" type="Texture" id=7]
 [ext_resource path="res://explorerIcon.png" type="Texture" id=8]
@@ -14,6 +14,15 @@
 [ext_resource path="res://ExplorerProgram.tscn" type="PackedScene" id=12]
 [ext_resource path="res://RecycleProgram.tscn" type="PackedScene" id=13]
 [ext_resource path="res://FileProgram.tscn" type="PackedScene" id=14]
+[ext_resource path="res://cheesyNotepadPressed.png" type="Texture" id=15]
+[ext_resource path="res://recycleBinPressed.png" type="Texture" id=16]
+[ext_resource path="res://explorerIconPressed.png" type="Texture" id=17]
+[ext_resource path="res://fileIconPressed.png" type="Texture" id=18]
+
+[sub_resource type="DynamicFont" id=1]
+size = 22
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 5 )
 
 [node name="DesktopIcons" type="Control"]
 anchor_right = 1.0
@@ -22,51 +31,94 @@ rect_min_size = Vector2( 1920, 1080 )
 script = ExtResource( 3 )
 
 [node name="Notepad" type="TextureButton" parent="."]
-margin_left = 163.0
-margin_top = 114.0
-margin_right = 302.0
-margin_bottom = 253.0
+margin_left = 333.0
+margin_top = 312.0
+margin_right = 472.0
+margin_bottom = 451.0
 rect_min_size = Vector2( 20, 20 )
 texture_normal = ExtResource( 1 )
-texture_pressed = ExtResource( 5 )
+texture_pressed = ExtResource( 15 )
 expand = true
+
+[node name="Label" type="Label" parent="Notepad"]
+margin_left = 43.0
+margin_top = 146.0
+margin_right = 117.0
+margin_bottom = 174.0
+custom_fonts/font = SubResource( 1 )
+text = "Notepad"
 
 [node name="Recycle Bin" type="TextureButton" parent="."]
-margin_left = 163.0
-margin_top = 368.0
-margin_right = 302.0
-margin_bottom = 507.0
+margin_left = 77.0
+margin_top = 58.0
+margin_right = 216.0
+margin_bottom = 197.0
 rect_min_size = Vector2( 20, 20 )
 texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 16 )
 expand = true
 
+[node name="Label2" type="Label" parent="Recycle Bin"]
+margin_left = 31.0
+margin_top = 145.0
+margin_right = 105.0
+margin_bottom = 169.0
+custom_fonts/font = SubResource( 1 )
+text = "Recycle Bin"
+
 [node name="Paint" type="TextureButton" parent="."]
-margin_left = 467.0
-margin_top = 119.0
-margin_right = 606.0
-margin_bottom = 258.0
+margin_left = 335.0
+margin_top = 63.0
+margin_right = 474.0
+margin_bottom = 202.0
 rect_min_size = Vector2( 20, 20 )
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 11 )
 expand = true
 
+[node name="Label3" type="Label" parent="Paint"]
+margin_left = 56.0
+margin_top = 157.0
+margin_right = 130.0
+margin_bottom = 181.0
+custom_fonts/font = SubResource( 1 )
+text = "Paint"
+
 [node name="Files" type="TextureButton" parent="."]
-margin_left = 464.0
-margin_top = 367.0
-margin_right = 603.0
-margin_bottom = 506.0
+margin_left = 67.0
+margin_top = 307.0
+margin_right = 206.0
+margin_bottom = 446.0
 rect_min_size = Vector2( 20, 20 )
 texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 18 )
 expand = true
 
+[node name="Label4" type="Label" parent="Files"]
+margin_left = 35.0
+margin_top = 146.0
+margin_right = 112.0
+margin_bottom = 170.0
+custom_fonts/font = SubResource( 1 )
+text = "File Explorer"
+
 [node name="Explorer" type="TextureButton" parent="."]
-margin_left = 168.0
-margin_top = 621.0
-margin_right = 307.0
-margin_bottom = 760.0
+margin_left = 73.0
+margin_top = 543.0
+margin_right = 212.0
+margin_bottom = 682.0
 rect_min_size = Vector2( 20, 20 )
 texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 17 )
 expand = true
+
+[node name="Label5" type="Label" parent="Explorer"]
+margin_left = 24.0
+margin_top = 145.0
+margin_right = 123.0
+margin_bottom = 169.0
+custom_fonts/font = SubResource( 1 )
+text = "Escape Explorer"
 
 [node name="CanvasLayerPaint" type="CanvasLayer" parent="."]
 layer = 2
@@ -74,7 +126,6 @@ layer = 2
 [node name="PaintProgram" parent="CanvasLayerPaint" instance=ExtResource( 4 )]
 visible = false
 margin_right = 0.0
-margin_bottom = 0.0
 
 [node name="CanvasLayerWin" type="CanvasLayer" parent="."]
 

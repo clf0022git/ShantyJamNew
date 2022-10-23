@@ -82,7 +82,7 @@ _global_script_class_icons={
 
 config/name="Escape Is The Key"
 run/main_scene="res://Startup.tscn"
-config/icon="res://escapePic2.png"
+config/icon="res://escapeIcon.png"
 
 [autoload]
 
@@ -93,9 +93,10 @@ SceneTransition="*res://scene_transition.tscn"
 
 window/size/width=1920
 window/size/height=1080
-window/size/fullscreen=true
 mouse_cursor/custom_image="res://cheesecursor.png"
 mouse_cursor/custom_image_hotspot=Vector2( 16, 16 )
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [editor_plugins]
 

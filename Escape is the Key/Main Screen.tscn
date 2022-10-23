@@ -142,6 +142,7 @@ visible = false
 position = Vector2( 1684, 207 )
 frames = SubResource( 3 )
 animation = "twerk"
+frame = 2
 playing = true
 
 [node name="MoStare" type="Sprite" parent="."]

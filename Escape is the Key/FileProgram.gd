@@ -6,13 +6,10 @@ var new_dialog6 = Dialogic.start("Not Working")
 var new_dialog7 = Dialogic.start("Still Not")
 var new_dialog = Dialogic.start("Click Escape")
 var new_dialog2 = Dialogic.start("Click Among File")
-signal emitting_node
+var new_dialog3 = Dialogic.start("StopAccess")
 var speak = false
 
-func _ready():
-	get_node("/root/Desktop/DesktopIcons").connect("smhotime", self,"_smhoSpeak")
-
-func _smhoSpeak():
+func _smhoAllows():
 	speak = true
 
 func _on_exitWindow_pressed():
@@ -23,13 +20,14 @@ func _escapePressed():
 	
 func _doublePressed():
 	doublePressed = true
+	add_child(new_dialog3)
+
 
 func _on_escapeButton_pressed():
 	if pressed == true:
 		add_child(new_dialog6)
 	if doublePressed == true:
 		yield(get_tree().create_timer(2), "timeout")
-		emit_signal("emitting_node")
 		visible = false
 		get_node("/root/Desktop/rocksFalling2").play("rocks falling")
 		Global.camera.shake(2,10)

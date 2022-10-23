@@ -7,14 +7,14 @@ var new_dialog6 = Dialogic.start('Inside Notepad')
 var new_dialog7 = Dialogic.start('Inside Recycle Bin')
 var new_dialog8 = Dialogic.start('Paint Program')
 var new_dialog13 = Dialogic.start('Inside File')
+var new_dialog15 = Dialogic.start('Connection')
 var checkForFile = false
 var playerControl = false
 var fileAccess = false
 var smhoDialog = false
-signal smhotime
 
-func _ready():
-	get_node("/root/Desktop/DesktopIcons/CanvasLayerFile/FileProgram").connect("emitting_node", self,"_fileAccessible")
+func _stopAccess():
+	fileAccess = false
 
 func _process(delta):
 	if playerControl == true:
@@ -34,7 +34,7 @@ func _fileIconChosen():
 func _allowPlayerControl():
 	playerControl = true
 	smhoDialog = true
-	emit_signal("smhotime")
+	add_child(new_dialog15)
 
 func _on_Files_pressed():
 	if checkForFile == true:

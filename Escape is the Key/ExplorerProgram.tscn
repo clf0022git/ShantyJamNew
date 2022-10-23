@@ -1,11 +1,50 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=26 format=2]
 
-[ext_resource path="res://paintProgramEmpty2.png" type="Texture" id=1]
+[ext_resource path="res://MoneyAnimation5.png" type="Texture" id=1]
 [ext_resource path="res://closeBoxPressed.png" type="Texture" id=2]
 [ext_resource path="res://closeBoxHover.png" type="Texture" id=3]
 [ext_resource path="res://closeBox.png" type="Texture" id=4]
 [ext_resource path="res://ExplorerProgram.gd" type="Script" id=5]
 [ext_resource path="res://Website.gd" type="Script" id=6]
+[ext_resource path="res://WebsiteInside.png" type="Texture" id=7]
+[ext_resource path="res://MoneyAnimation6.png" type="Texture" id=8]
+[ext_resource path="res://MoneyAnimation3.png" type="Texture" id=9]
+[ext_resource path="res://MoneyAnimation7.png" type="Texture" id=10]
+[ext_resource path="res://MoneyAnimation1.png" type="Texture" id=11]
+[ext_resource path="res://MoneyAnimation4.png" type="Texture" id=12]
+[ext_resource path="res://MoneyAnimation8.png" type="Texture" id=13]
+[ext_resource path="res://MoneyAnimation2.png" type="Texture" id=14]
+[ext_resource path="res://WebsiteBorder.png" type="Texture" id=15]
+[ext_resource path="res://Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=16]
+[ext_resource path="res://Fonts/Subjectivity-Black.otf" type="DynamicFontData" id=17]
+[ext_resource path="res://Fonts/Born2bSportyV10.ttf" type="DynamicFontData" id=18]
+[ext_resource path="res://WebsiteInside.gd" type="Script" id=19]
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 86
+font_data = ExtResource( 18 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=5]
+size = 43
+font_data = ExtResource( 17 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.0705882, 0.419608, 0.184314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.0980392, 0.576471, 0.254902, 1 )
 
 [node name="ExplorerProgram" type="Control"]
 anchor_right = 1.0
@@ -16,19 +55,69 @@ script = ExtResource( 5 )
 margin_left = 308.0
 margin_top = 182.0
 margin_right = 1388.0
-margin_bottom = 902.0
-texture = ExtResource( 1 )
+margin_bottom = 1682.0
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 15 )
 script = ExtResource( 6 )
 
+[node name="AddressBar" type="Label" parent="Website"]
+margin_left = 102.0
+margin_top = 46.0
+margin_right = 697.0
+margin_bottom = 87.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "HTTPS://RADICALKeyCaps.shop"
+
+[node name="WebsiteInside" type="TextureRect" parent="Website"]
+margin_left = 85.0
+margin_top = 115.0
+margin_right = 985.0
+margin_bottom = 1456.0
+texture = ExtResource( 7 )
+expand = true
+script = ExtResource( 19 )
+
+[node name="Counter" type="Label" parent="Website/WebsiteInside"]
+margin_left = 685.0
+margin_top = 261.0
+margin_right = 776.0
+margin_bottom = 348.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "0"
+align = 1
+
 [node name="exitWindow" type="TextureButton" parent="Website"]
-margin_left = 1014.0
-margin_top = 8.0
-margin_right = 1054.0
-margin_bottom = 48.0
+margin_left = 997.0
+margin_top = 39.0
+margin_right = 1061.0
+margin_bottom = 98.0
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 expand = true
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Website"]
+position = Vector2( 811.375, 643.677 )
+scale = Vector2( 2.65039, 2.97379 )
+frames = SubResource( 1 )
+frame = 3
+playing = true
+
+[node name="BuyNow" type="Button" parent="Website"]
+margin_left = 548.0
+margin_top = 838.0
+margin_right = 912.0
+margin_bottom = 1033.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.266667, 0.258824, 0.258824, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+text = "BUY NOW!!!!"
+
 [connection signal="gui_input" from="Website" to="Website" method="_on_Website_gui_input"]
 [connection signal="pressed" from="Website/exitWindow" to="." method="_on_exitWindow_pressed"]
+[connection signal="pressed" from="Website/BuyNow" to="Website/WebsiteInside" method="_on_BuyNow_pressed"]

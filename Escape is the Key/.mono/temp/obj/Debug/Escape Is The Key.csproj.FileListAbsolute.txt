@@ -14,3 +14,11 @@ C:\Users\cfech\Desktop\Escape is the Key Version 3\.mono\temp\obj\Debug\Escape I
 C:\Users\cfech\Desktop\Escape is the Key Version 3\.mono\temp\obj\Debug\Escape Is The Key.csproj.CoreCompileInputs.cache
 C:\Users\cfech\Desktop\Escape is the Key Version 3\.mono\temp\obj\Debug\Escape Is The Key.dll
 C:\Users\cfech\Desktop\Escape is the Key Version 3\.mono\temp\obj\Debug\Escape Is The Key.pdb
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\bin\Debug\Escape Is The Key.dll
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\bin\Debug\Escape Is The Key.pdb
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\obj\Debug\Escape Is The Key.csprojAssemblyReference.cache
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\obj\Debug\Escape Is The Key.AssemblyInfoInputs.cache
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\obj\Debug\Escape Is The Key.AssemblyInfo.cs
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\obj\Debug\Escape Is The Key.csproj.CoreCompileInputs.cache
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\obj\Debug\Escape Is The Key.dll
+C:\Users\cfech\Documents\GitHub\ShantyJamNew\Escape is the Key\.mono\temp\obj\Debug\Escape Is The Key.pdb

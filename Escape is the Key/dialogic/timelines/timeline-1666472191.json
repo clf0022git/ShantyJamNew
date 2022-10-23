@@ -1,0 +1,70 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "wideEyes",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "[speed=8] That's [i]not[/i] good."
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0.1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_dialog2over",
+				"target_node_path": "/root/Desktop"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666472191.json",
+		"name": "Still Not"
+	}
+}

@@ -1,0 +1,100 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "worried",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "worried",
+			"text": "Huh?"
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "wideEyes",
+			"text": "It should work."
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "looking",
+			"text": "[speed=10]. . ."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "wideEyes",
+			"text": "RATS!"
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "squint",
+			"text": "It's still there!"
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "determined",
+			"text": "Keep pressing it! I'm sure with perseverance you'll do it!"
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0.1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_doublePressed",
+				"target_node_path": "/root/Desktop/DesktopIcons/CanvasLayerFile/FileProgram"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666471457.json",
+		"name": "Not Working"
+	}
+}

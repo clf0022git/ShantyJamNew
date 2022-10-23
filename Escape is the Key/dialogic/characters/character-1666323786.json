@@ -46,6 +46,10 @@
 		{
 			"name": "looking",
 			"path": "res://MoLook.png"
+		},
+		{
+			"name": "thinking",
+			"path": "res://MoThink.png"
 		}
 	],
 	"scale": 200,

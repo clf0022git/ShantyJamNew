@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://FileProgram.gd" type="Script" id=1]
 [ext_resource path="res://FileExplorer.gd" type="Script" id=2]
-[ext_resource path="res://paintProgramEmpty2.png" type="Texture" id=3]
+[ext_resource path="res://escapePic.png" type="Texture" id=3]
 [ext_resource path="res://closeBoxPressed.png" type="Texture" id=4]
 [ext_resource path="res://closeBoxHover.png" type="Texture" id=5]
 [ext_resource path="res://closeBox.png" type="Texture" id=6]
+[ext_resource path="res://fileProgramEmpty.png" type="Texture" id=7]
+[ext_resource path="res://escapePic3.png" type="Texture" id=8]
+[ext_resource path="res://fileIcon.png" type="Texture" id=9]
+[ext_resource path="res://fileIcon2.png" type="Texture" id=10]
 
 [node name="FileProgram" type="Control"]
 anchor_right = 1.0
@@ -17,7 +21,7 @@ margin_left = 386.0
 margin_top = 160.0
 margin_right = 1466.0
 margin_bottom = 880.0
-texture = ExtResource( 3 )
+texture = ExtResource( 7 )
 expand = true
 script = ExtResource( 2 )
 
@@ -31,5 +35,24 @@ texture_pressed = ExtResource( 4 )
 texture_hover = ExtResource( 5 )
 expand = true
 
+[node name="escapeButton" type="TextureButton" parent="FileExplorer"]
+margin_left = 77.0
+margin_top = 193.0
+margin_right = 254.0
+margin_bottom = 370.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 8 )
+expand = true
+
+[node name="doNotButton" type="TextureButton" parent="FileExplorer"]
+margin_left = 891.0
+margin_top = 537.0
+margin_right = 988.0
+margin_bottom = 634.0
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+expand = true
+
 [connection signal="gui_input" from="FileExplorer" to="FileExplorer" method="_on_FileExplorer_gui_input"]
 [connection signal="pressed" from="FileExplorer/exitWindow" to="." method="_on_exitWindow_pressed"]
+[connection signal="pressed" from="FileExplorer/escapeButton" to="." method="_on_escapeButton_pressed"]

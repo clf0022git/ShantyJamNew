@@ -63,7 +63,7 @@
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "wideEyes",
-			"text": "[speed = 8] [wave amp=50 freq=4]USER![/wave]"
+			"text": "[speed = 8][wave amp=50 freq=4]USER![/wave]"
 		},
 		{
 			"character": "",
@@ -181,7 +181,7 @@
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "determined",
-			"text": "With  [wave amp=50 freq=2]ME AND YOU[/wave], we can beat  [wave amp=50 freq=2]ANYTHING[/wave]."
+			"text": "With [wave amp=50 freq=2]ME AND YOU[/wave], we can beat  [wave amp=50 freq=2]ANYTHING[/wave]."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -221,7 +221,7 @@
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "looking",
-			"text": "It even has some rude markings on it's bottom."
+			"text": "It even has some rude markings on its bottom."
 		},
 		{
 			"event_id": "dialogic_023",
@@ -244,143 +244,21 @@
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "squint",
-			"text": "We'll put an [b]END[/b] to it."
-		},
-		{
-			"animation": "instant_out.gd",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666323786.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1666330503.cfg"
-		},
-		{
-			"animation": "2-fade_in_up.gd",
-			"animation_length": 1,
-			"animation_wait": true,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666323850.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": true,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 1
-		},
-		{
-			"character": "character-1666323850.json",
-			"event_id": "dialogic_001",
-			"portrait": "Default",
-			"text": "SHUT UP"
-		},
-		{
-			"animation": "instant_out.gd",
-			"animation_length": 0,
-			"animation_wait": false,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666323850.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "default-theme.cfg"
-		},
-		{
-			"animation": "instant_in.gd",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666323786.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
+			"text": "[speed=6]We'll put an [b]END[/b] to it."
 		},
 		{
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "Default",
-			"text": "Oh my goodness"
-		},
-		{
-			"character": "character-1666323786.json",
-			"event_id": "dialogic_001",
-			"portrait": "Default",
-			"text": "dfgfdgdgdf"
-		},
-		{
-			"animation": "instant_out.gd",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1666323786.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 1,
-			"z_index": 0
+			"text": "Okay, so first, you're going to need to click on that [color=brown]file icon[/color] I was talking about earlier."
 		},
 		{
 			"call_node": {
 				"arguments": [
 
 				],
-				"method_name": "_dialog2over",
-				"target_node_path": "/root/Desktop"
+				"method_name": "_fileIconChosen",
+				"target_node_path": "/root/Desktop/DesktopIcons"
 			},
 			"event_id": "dialogic_042"
 		}

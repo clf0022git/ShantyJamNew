@@ -1,0 +1,91 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1666330503.cfg"
+		},
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 1
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "[speed=10][shake rate=100 level=15]HA. HA. HA.[/shake]"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "[speed=10]IT IS I."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "The [speed =10][shake rate 100 level = 15]GREAT [/shake] [color=purple]S M H O[/color]."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Looks like that idiot, [color=orange]Mo[/color], really messed up this time!"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoHoldLaugh",
+			"text": "That [color=orange]swiss[/color]brain couldn't tell a [color=red]VIRUS[/color] from a piece of [color=orange]cheese[/color]."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoWelp",
+			"text": "Looks like you're stuck with [color=purple]ME[/color]!"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Good luck trying to [color=red]escape[/color] this one!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_allowPlayerControl",
+				"target_node_path": "/root/Desktop/DesktopIcons"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666477972.json",
+		"name": "Smho Enters"
+	}
+}

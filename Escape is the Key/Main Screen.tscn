@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Concrete scrape loop.mp3" type="AudioStream" id=1]
 [ext_resource path="res://Main Screen.gd" type="Script" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://among3.png" type="Texture" id=11]
 [ext_resource path="res://among4.png" type="Texture" id=12]
 [ext_resource path="res://MoStare.png" type="Texture" id=13]
+[ext_resource path="res://rocksFalling.tscn" type="PackedScene" id=14]
+[ext_resource path="res://rocks falling.tres" type="Animation" id=15]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Mo"
@@ -75,6 +77,9 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
+[sub_resource type="Animation" id=4]
+resource_name = "Smho"
+
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 10 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 12 ) ],
@@ -102,6 +107,9 @@ margin_right = 1920.0
 margin_bottom = 1080.0
 
 [node name="DesktopIcons" parent="." instance=ExtResource( 8 )]
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 467, 249 )
 
 [node name="Clock" parent="." instance=ExtResource( 6 )]
 margin_left = 1720.0
@@ -118,6 +126,10 @@ texture = ExtResource( 3 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Mo = SubResource( 1 )
 anims/RESET = SubResource( 2 )
+anims/Smho = SubResource( 4 )
+
+[node name="rocksFalling2" parent="." instance=ExtResource( 14 )]
+"anims/rocks falling" = ExtResource( 15 )
 
 [node name="Screech" type="AudioStreamPlayer" parent="."]
 

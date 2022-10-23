@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ieiE10G9epmcVZwv1MwOt//+RK1UrDb+bLqT8puq/FnneVdr5zEKqhsUOD4LTpH0CpCyDCuY1uOpQHK1lEfFHg==",
+  "dgSpecHash": "Dy6tP6+KFg4ISUHdZLBL32ad31U2+pmD6Kx1l2dQqjp/1c1ZpqvixEkUaSzKB4dHeSOsxmA4YkMfHKB/6MiXsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJam\\Escape is the Key\\Escape Is The Key.csproj",
+  "projectFilePath": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJamNew\\Escape is the Key\\Escape Is The Key.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cfech\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
     "C:\\Users\\cfech\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"

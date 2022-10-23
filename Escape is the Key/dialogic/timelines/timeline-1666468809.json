@@ -1,0 +1,77 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "closedEyes",
+			"text": "Yes, that's the one!"
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Now all we need to do is click a program called [color=black]ESCAPE[/color][wave amp=50 freq=2].exe[/wave]."
+		},
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "thinking",
+			"text": "That should be around here somewhere [speed = 10]. . ."
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_escapePressed",
+				"target_node_path": "/root/Desktop/DesktopIcons/CanvasLayerFile/FileProgram"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666468809.json",
+		"name": "File Explorer"
+	}
+}

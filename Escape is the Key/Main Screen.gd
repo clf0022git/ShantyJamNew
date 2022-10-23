@@ -19,12 +19,12 @@ func _showAmong():
 	$crewmate.visible = true
 	$MoStare.visible = true
 	$MoOverworld.visible = false
-	
+
 func _dialog2over():
 	Global.camera.shake(2,10)
 	yield(get_tree().create_timer(2), "timeout")
 	get_tree().change_scene("res://Corruption.tscn")
-	
+
 func _input(event):
 	if event is InputEventMouseMotion and event.relative:
 		mouseMoving = true

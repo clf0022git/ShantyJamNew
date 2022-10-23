@@ -420,11 +420,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJam\\Escape is the Key\\Escape Is The Key.csproj",
+      "projectUniqueName": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJamNew\\Escape is the Key\\Escape Is The Key.csproj",
       "projectName": "Escape Is The Key",
-      "projectPath": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJam\\Escape is the Key\\Escape Is The Key.csproj",
+      "projectPath": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJamNew\\Escape is the Key\\Escape Is The Key.csproj",
       "packagesPath": "C:\\Users\\cfech\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJam\\Escape is the Key\\.mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\cfech\\Documents\\GitHub\\ShantyJamNew\\Escape is the Key\\.mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cfech\\AppData\\Roaming\\NuGet\\NuGet.Config"

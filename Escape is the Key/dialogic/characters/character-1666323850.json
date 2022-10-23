@@ -18,6 +18,14 @@
 		{
 			"name": "closedEyes",
 			"path": "res://Smho2.png"
+		},
+		{
+			"name": "SmhoHoldLaugh",
+			"path": "res://SmhoHoldLaugh.png"
+		},
+		{
+			"name": "SmhoWelp",
+			"path": "res://SmhoWelp.png"
 		}
 	],
 	"scale": 200,

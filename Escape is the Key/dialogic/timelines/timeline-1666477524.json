@@ -1,0 +1,35 @@
+{
+	"events": [
+		{
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_001",
+			"portrait": "wideEyes",
+			"text": "[speed = 3][wave amp=50 freq=2][i]W - W A I T ![/i][/wave]"
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323786.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666477524.json",
+		"name": "Mo Delete"
+	}
+}

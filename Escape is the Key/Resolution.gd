@@ -10,7 +10,7 @@ func _ready():
 	add_child(new_dialog10)
 	
 func _end():
-	get_tree().quit()
+	SceneTransition.change_scene("res://Credits.tscn")
 	
 func _showAmong():
 	$crewmate.visible = true

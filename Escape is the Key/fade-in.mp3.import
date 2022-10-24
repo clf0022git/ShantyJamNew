@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fade-in.mp3-62c36d20dee53588c73f809614648157.mp3str"
+
+[deps]
+
+source_file="res://fade-in.mp3"
+dest_files=[ "res://.import/fade-in.mp3-62c36d20dee53588c73f809614648157.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

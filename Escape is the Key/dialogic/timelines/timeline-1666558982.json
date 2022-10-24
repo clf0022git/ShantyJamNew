@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_onPaintRead",
+				"target_node_path": "/root/Desktop/ObjectiveList"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666558982.json",
+		"name": "paintread"
+	}
+}

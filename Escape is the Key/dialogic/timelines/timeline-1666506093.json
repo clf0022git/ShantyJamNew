@@ -29,6 +29,16 @@
 			"event_id": "dialogic_001",
 			"portrait": "SmhoWelp",
 			"text": "[speed=6]You [shake rate=25 level=15]really[/shake] bought one of those?"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_onFirstPress",
+				"target_node_path": "/root/Desktop/DesktopIcons/CanvasLayerExplorer/ExplorerProgram/Website/WebsiteInside"
+			},
+			"event_id": "dialogic_042"
 		}
 	],
 	"metadata": {

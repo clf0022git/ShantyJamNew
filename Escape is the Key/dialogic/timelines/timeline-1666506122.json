@@ -41,6 +41,16 @@
 			"event_id": "dialogic_001",
 			"portrait": "closedEyes",
 			"text": "I don't even see why you bothered coming in here."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_onRecycleRead",
+				"target_node_path": "/root/Desktop/ObjectiveList"
+			},
+			"event_id": "dialogic_042"
 		}
 	],
 	"metadata": {

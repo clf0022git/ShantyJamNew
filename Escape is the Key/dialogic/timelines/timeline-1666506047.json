@@ -74,6 +74,16 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_onWebsiteRead",
+				"target_node_path": "/root/Desktop/ObjectiveList"
+			},
+			"event_id": "dialogic_042"
 		}
 	],
 	"metadata": {

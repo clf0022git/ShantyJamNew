@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_showList",
+				"target_node_path": "/root/Desktop"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666559890.json",
+		"name": "showList"
+	}
+}

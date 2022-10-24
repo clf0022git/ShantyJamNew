@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scene_transition.gd" type="Script" id=1]
+[ext_resource path="res://fade-in.mp3" type="AudioStream" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "RESET"
@@ -46,3 +47,6 @@ mouse_filter = 2
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 1 )
 anims/dissolve = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )

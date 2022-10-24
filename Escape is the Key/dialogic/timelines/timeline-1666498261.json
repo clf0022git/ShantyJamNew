@@ -162,14 +162,14 @@
 		{
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
-			"portrait": "squint",
-			"text": "I forgot that it's the[wave amp=50 freq=2] [b]ESCAPE KEY[/b][/wave], not [wave amp=50 freq=2][b]ESCAPE.EXE[/b][/wave]."
+			"portrait": "Default",
+			"text": "Who would've thought that you needed to use the [wave amp=50 freq=2] [b]ESCAPE KEY[/b][/wave] for [wave amp=50 freq=2][b]ESCAPE.EXE[/b][/wave]."
 		},
 		{
 			"character": "character-1666323786.json",
 			"event_id": "dialogic_001",
 			"portrait": "thinking",
-			"text": "[i]They do sound very similar.[/i]"
+			"text": "[i]I mean they do sound very similar.[/i]"
 		},
 		{
 			"animation": "instant_out.gd",

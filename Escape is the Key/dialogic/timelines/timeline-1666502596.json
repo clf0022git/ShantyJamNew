@@ -110,7 +110,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[speed=8][i]Computer shutting down[/i] [speed=10][wave amp=50 freq=2]. . .[/wave]"
+			"text": "[speed=8][i]Computer logging off[/i] [speed=10][wave amp=50 freq=2]. . .[/wave]"
 		},
 		{
 			"call_node": {

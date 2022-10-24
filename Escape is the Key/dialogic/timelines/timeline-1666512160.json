@@ -45,6 +45,16 @@
 			},
 			"type": 1,
 			"z_index": 0
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_onFileRead",
+				"target_node_path": "/root/Desktop/ObjectiveList"
+			},
+			"event_id": "dialogic_042"
 		}
 	],
 	"metadata": {

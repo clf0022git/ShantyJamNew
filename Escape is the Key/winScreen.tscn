@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://winScreen.gd" type="Script" id=1]
 [ext_resource path="res://closeBoxHover.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://checkBox.png" type="Texture" id=6]
 [ext_resource path="res://checkBoxHover.png" type="Texture" id=7]
 [ext_resource path="res://checkBoxPress.png" type="Texture" id=8]
+[ext_resource path="res://fade-in.wav" type="AudioStream" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -62,6 +63,9 @@ margin_right = 491.541
 margin_bottom = 82.729
 custom_fonts/font = SubResource( 1 )
 text = "ARE YOU SURE?"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
 
 [connection signal="pressed" from="ColorRect/Yes" to="." method="_on_Yes_pressed"]
 [connection signal="pressed" from="ColorRect/No" to="." method="_on_No_pressed"]

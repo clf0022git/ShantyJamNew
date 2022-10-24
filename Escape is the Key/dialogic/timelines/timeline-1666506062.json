@@ -41,6 +41,16 @@
 			"event_id": "dialogic_001",
 			"portrait": "SmhoHoldLaugh",
 			"text": "Good luck trying to find anything in here!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "_onNoteRead",
+				"target_node_path": "/root/Desktop/ObjectiveList"
+			},
+			"event_id": "dialogic_042"
 		}
 	],
 	"metadata": {

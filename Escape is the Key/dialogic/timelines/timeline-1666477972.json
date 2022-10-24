@@ -64,7 +64,7 @@
 			"character": "character-1666323850.json",
 			"event_id": "dialogic_001",
 			"portrait": "SmhoWelp",
-			"text": "Looks like you're stuck with [color=purple]ME[/color]!"
+			"text": "Looks like you're stuck with [color=purple][speed=8][wave amp=50 freq=2]ME[/wave][/color]!"
 		},
 		{
 			"character": "character-1666323850.json",
@@ -88,7 +88,7 @@
 			"character": "character-1666323850.json",
 			"event_id": "dialogic_001",
 			"portrait": "SmhoTongue",
-			"text": "I think those darned programs are working now, so feel free to play with them while your stuck with [speed=8][wave amp=50 freq=2]M E[/wave]."
+			"text": "I think those programs are working now, so feel free to play with them while you're [color=red]trapped[/color] here."
 		},
 		{
 			"character": "character-1666323850.json",

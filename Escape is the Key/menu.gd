@@ -8,6 +8,7 @@ var new_dialog7 = Dialogic.start('Inside Recycle Bin')
 var new_dialog8 = Dialogic.start('Paint Program')
 var new_dialog13 = Dialogic.start('Inside File')
 var new_dialog15 = Dialogic.start('Connection')
+var new_dialog10 = Dialogic.start('showList')
 var checkForFile = false
 var playerControl = false
 var fileAccess = false
@@ -35,6 +36,7 @@ func _allowPlayerControl():
 	playerControl = true
 	smhoDialog = true
 	add_child(new_dialog15)
+	add_child(new_dialog10)
 
 func _on_Files_pressed():
 	if checkForFile == true:

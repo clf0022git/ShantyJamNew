@@ -1,0 +1,114 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "closedEyes",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "closedEyes",
+			"text": "Wow, I'm impressed, you managed to complete the checklist."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoHoldLaugh",
+			"text": "Or that's what I [b]WOULD[/b] say if it was actually [speed=8][wave amp=50 freq=2]IMPRESSIVE[/wave]."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoSurp",
+			"text": "Did you really think you'd get some kind of sticker for getting this far?"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoAmused",
+			"text": "You're still trapped here!"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "With no way to ESCAPE."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoAmused",
+			"text": "[shake rate=100 level=15]HA. HA. HA.[/shake]"
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoWelp",
+			"text": "Unless you figure it out."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoWelp",
+			"text": "[speed=10]..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoTongue",
+			"text": "[speed=8]If only there was some button to press..."
+		},
+		{
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_001",
+			"portrait": "SmhoWink",
+			"text": "[speed=8]On your keyboard..."
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1666323850.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1666560072.json",
+		"name": "completeCheckList"
+	}
+}

@@ -17,3 +17,5 @@ func _on_info_pressed():
 
 func _hide_canvas():
 	$fakeWindow.visible = false
+	var new_dialog = Dialogic.start('paintread')
+	add_child(new_dialog)

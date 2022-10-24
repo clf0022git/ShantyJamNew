@@ -112,7 +112,7 @@ expand = true
 position = Vector2( 756.375, 627.01 )
 scale = Vector2( 2.65039, 2.97379 )
 frames = SubResource( 1 )
-frame = 3
+frame = 7
 playing = true
 
 [node name="BuyNow" type="Button" parent="Website"]

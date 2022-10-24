@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Y2Mate.is - earth shaking sound effect-SwxjiDqlX64-160k-1656658979349.mp3-b262ca2f48fb2e585eddb396da6edbb8.mp3str"
+
+[deps]
+
+source_file="res://Y2Mate.is - earth shaking sound effect-SwxjiDqlX64-160k-1656658979349.mp3"
+dest_files=[ "res://.import/Y2Mate.is - earth shaking sound effect-SwxjiDqlX64-160k-1656658979349.mp3-b262ca2f48fb2e585eddb396da6edbb8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
